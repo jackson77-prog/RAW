@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAW</title>
+</head>
+<body>
+    <div>
+        <div class="mainHeading">
+            <h1>Recipe from Around the World</h1>
+        </div>
+
+
+        <div class="SearchSection">
+            <input
+                id="nameSearch"
+                type="text"
+                placeholder="Enter the name of the food here"
+            />
+            <button id="btnSearchName"> Search</button>
+        </div>
+       
+        <div class="ingridient">
+            <h2>Ingridients</h2>
+        </div>
+       
+        <div class="procedure">
+            <h2>Procedure</h2>
+        </div>
+
+
+        <div class="customerSection">
+            <div class="starRating">
+                <h3>Ratings</h3>
+                <p> Kindly rate this dish </p>
+                <div class="rating" id="ratingStars"></div>
+
+
+ <script>
+                    const ratingContainer = document.getElementById('ratingStars');
+
+
+                    for (let i = 5; i >= 1; i--) {
+                    const input = document.createElement('input');
+                    input.type = 'radio';
+                    input.id = `star${i}`;
+                    input.name = 'rating';
+                    input.value = i;
+
+
+                    const label = document.createElement('label');
+                    label.className = 'star';
+                    label.htmlFor = `star${i}`;
+                    label.innerHTML = '&#9733;';
+
+
+                    ratingContainer.appendChild(input);
+                    ratingContainer.appendChild(label);
+    }
+</script>
+            </div>
+            <div class="commentSection">
+                <h3> Comments</h3>
+                <p> kindly leave us a comment telling us what you liked or did not like about the dish including but not limited to its ingridients or clarity of the procedure. Feel free to include relevant links</p>
+            </div>
+        </div>
+</div>
+</body>
+</html>
+
+
+
