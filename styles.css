@@ -1,0 +1,13 @@
+body{
+    background-color: rgba(0, 0, 0, 0.751);
+}
+.mainHeading{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 10px, 10px
+
+    }
+    
